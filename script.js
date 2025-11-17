@@ -1,5 +1,5 @@
 const API_KEY = "b6cd68134a1443ad814174448251611";
-const API_URL = "http://api.weatherapi.com/v1/current.json";
+const API_URL = "https://api.weatherapi.com/v1/current.json";
 
 const input = document.getElementById("search-input");
 const btn = document.getElementById("search-btn");
@@ -124,4 +124,5 @@ window.addEventListener("DOMContentLoaded", () => {
   loadPopularCities();
   // Load default city
   getWeather("Paris");
+
 });
