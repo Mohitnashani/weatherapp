@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather">
+        <a href="">Weather</a>
+        <a href="">Home </a>
+        <a href="">Usage guide </a>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card temperature">
+            <h3>🌡️ Temperature</h3>
+            <p id="temp-curr">-- °C</p>
+            <p id="temp-max">Max: -- °C</p>
+            <p id="temp-min">Min: -- °C</p>
+        </div>
+        <div class="card wind">
+            <h3>💨 Wind</h3>
+            <p id="wind">Speed: -- km/h</p>
+            <p id="wind-dir">Direction: -- °</p>
+            <p id="wind-feels">Feels like: -- °C</p>
+        </div>
+        <div class="card humidity">
+            <h3>💧 Humidity</h3>
+            <p id="humidity">Humidity: -- %</p>
+            <p id="sunrise-time">Sunrise: --</p>
+            <p id="sunset-time">Sunset: --</p>
+        </div>
+    </div>
+    <div class="common-places">
+        <h3>Popular Cities</h3>
+        <div class="places" id="places-container">
+            <div class="place-card" data-city="Mumbai">
+                <h4>Mumbai</h4>
+                <p class="city-temp">--°C</p>
+                <p class="city-humidity">--% humidity</p>
+                <p class="city-wind">-- km/h wind</p>
+            </div>
+            <div class="place-card" data-city="Delhi">
+                <h4>Delhi</h4>
+                <p class="city-temp">--°C</p>
+                <p class="city-humidity">--% humidity</p>
+                <p class="city-wind">-- km/h wind</p>
+            </div>
+            <div class="place-card" data-city="London">
+                <h4>London</h4>
+                <p class="city-temp">--°C</p>
+                <p class="city-humidity">--% humidity</p>
+                <p class="city-wind">-- km/h wind</p>
+            </div>
+            <div class="place-card" data-city="Tokyo">
+                <h4>Tokyo</h4>
+                <p class="city-temp">--°C</p>
+                <p class="city-humidity">--% humidity</p>
+                <p class="city-wind">-- km/h wind</p>
+            </div>
+            <div class="place-card" data-city="New York">
+                <h4>New York</h4>
+                <p class="city-temp">--°C</p>
+                <p class="city-humidity">--% humidity</p>
+                <p class="city-wind">-- km/h wind</p>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
